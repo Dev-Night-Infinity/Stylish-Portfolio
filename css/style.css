@@ -1,0 +1,322 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 6px; }
+
+body {
+  font-size: 1.6rem; }
+
+.container {
+  width: 70%;
+  margin: 0 auto; }
+
+/*Scrool style start*/
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #F5F5F5; }
+
+body::-webkit-scrollbar {
+  width: 10px;
+  background-color: #F5F5F5; }
+
+body::-webkit-scrollbar-thumb {
+  background-color: #0ae;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0.5, rgba(255, 255, 255, 0.2)), color-stop(0.5, transparent), to(transparent)); }
+
+/*Scrool style end*/
+header button, #project button, #welcome button, #resist button {
+  padding: 26px 50px;
+  font-size: 2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  border: 1px solid #1d809f;
+  background-color: #1d809f;
+  color: #fff;
+  transition: background-color .4s;
+  cursor: pointer; }
+  header button:focus, #project button:focus, #welcome button:focus, #resist button:focus {
+    outline: none; }
+  header button:hover, #project button:hover, #welcome button:hover, #resist button:hover {
+    background-color: #155d74; }
+
+header, #welcome, #portfolio .container .wrapper .item {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
+
+.menu i, .scrool-top {
+  position: fixed;
+  display: flex;
+  right: 15px;
+  width: 50px;
+  height: 50px;
+  border-radius: 4px;
+  font-size: 2rem;
+  background-color: #3d3d3d;
+  color: #fff;
+  opacity: 0.6;
+  transition: opacity .6s ease;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  z-index: 999; }
+  .menu i:hover, .scrool-top:hover {
+    opacity: 1; }
+
+/*Menu_icon start*/
+.menu i {
+  top: 15px; }
+
+/*Menu_icon end*/
+/*Nav start*/
+nav {
+  position: fixed;
+  background-color: #1d809f;
+  top: 0;
+  right: 0px;
+  width: 300px;
+  display: inline-block;
+  z-index: 99;
+  transition: right .6s;
+  height: 100vh;
+  transition: translate .6s ease; }
+  nav ul {
+    list-style: none; }
+    nav ul li {
+      transition: all .6s ease; }
+      nav ul li:nth-child(1) {
+        background-color: #155d74; }
+      nav ul li:hover {
+        background-color: #208eb0;
+        border-bottom: 1px solid #25a3ca;
+        padding-left: 20px; }
+      nav ul li a {
+        display: inline-block;
+        text-decoration: none;
+        color: #fff;
+        font-size: 20px;
+        padding: 26px;
+        width: 100%; }
+
+/*Nav end*/
+/*Header start*/
+header {
+  background-image: url(../img/bg-masthead.jpg);
+  text-align: center;
+  height: 100vh;
+  padding: 40rem 0;
+  line-height: 10rem; }
+  header h1 {
+    font-size: 10rem; }
+  header h3 {
+    font-size: 3rem;
+    font-style: italic; }
+
+/*Header end*/
+/*Project start*/
+#project {
+  text-align: center;
+  padding: 10rem 0; }
+  #project h2 {
+    font-size: 4rem; }
+  #project p {
+    font-size: 2.6rem;
+    letter-spacing: 2px;
+    margin: 20px 0; }
+    #project p a {
+      text-decoration: none;
+      word-spacing: 1px;
+      color: #1d809f; }
+      #project p a:hover {
+        color: #155d74;
+        text-decoration: underline; }
+  #project button {
+    background-color: #343a40; }
+    #project button:hover {
+      background-color: #1d2124; }
+
+/*Project end*/
+/*Services start*/
+#services {
+  background-color: #1d809f;
+  text-align: center;
+  color: #fff;
+  padding: 16rem 0; }
+  #services .caption h3 {
+    color: goldenrod;
+    font-size: 3rem;
+    text-transform: uppercase; }
+  #services .caption h2 {
+    font-size: 5rem;
+    font-weight: bold; }
+  #services .wrapper {
+    display: flex;
+    flex-wrap: wrap; }
+    #services .wrapper .item {
+      width: 100%; }
+      #services .wrapper .item i {
+        background-color: #fff;
+        color: #1d809f;
+        padding: 50px 60px;
+        border-radius: 50%;
+        font-size: 6rem;
+        transition: transform .6s ease; }
+        #services .wrapper .item i:hover {
+          transform: translateY(-10px);
+          box-shadow: 0px 6px 14px -1px rgba(255, 255, 255, 0.64); }
+    #services .wrapper .content {
+      line-height: 5rem; }
+      #services .wrapper .content h4 {
+        font-size: 3rem; }
+      #services .wrapper .content p {
+        font-size: 3rem;
+        opacity: 0.7; }
+
+/*Services end*/
+/*Welcome start*/
+#welcome {
+  background-image: url(../img/bg-callout.jpg);
+  text-align: center;
+  padding: 30rem 0; }
+  #welcome h2 {
+    font-size: 7rem;
+    margin-bottom: 37px; }
+
+/*Welcome end*/
+/*Portfolio start*/
+#portfolio {
+  padding: 10rem 0; }
+  #portfolio .container {
+    width: 90%; }
+    #portfolio .container .caption {
+      text-align: center;
+      margin-bottom: 60px; }
+      #portfolio .container .caption h3 {
+        color: goldenrod;
+        font-size: 3rem;
+        text-transform: uppercase; }
+      #portfolio .container .caption h2 {
+        font-size: 5rem;
+        font-weight: bold; }
+    #portfolio .container .wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      color: #fff; }
+      #portfolio .container .wrapper .item {
+        width: 100%;
+        height: 360px;
+        clip-path: inset(0);
+        transition: clip-path .6s ease;
+        position: relative;
+        cursor: pointer; }
+        #portfolio .container .wrapper .item::after {
+          content: '';
+          background-color: #45b9dd;
+          position: absolute;
+          width: 100%;
+          height: 400px;
+          z-index: 99;
+          opacity: 0;
+          transition: opacity 0.6s ease; }
+        #portfolio .container .wrapper .item:hover {
+          clip-path: inset(37px); }
+        #portfolio .container .wrapper .item:hover::after {
+          opacity: 0.6; }
+        #portfolio .container .wrapper .item:nth-child(1) {
+          background-image: url(../img/portfolio-1.jpg); }
+        #portfolio .container .wrapper .item:nth-child(2) {
+          background-image: url(../img/portfolio-2.jpg); }
+        #portfolio .container .wrapper .item:nth-child(3) {
+          background-image: url(../img/portfolio-3.jpg); }
+        #portfolio .container .wrapper .item:nth-child(4) {
+          background-image: url(../img/portfolio-4.jpg); }
+        #portfolio .container .wrapper .item .content {
+          position: absolute;
+          left: 10%;
+          bottom: 24%; }
+          #portfolio .container .wrapper .item .content h2 {
+            font-size: 4rem; }
+          #portfolio .container .wrapper .item .content p {
+            font-size: 2rem; }
+
+/*Portfolio end*/
+/*Resist start*/
+#resist {
+  background-color: #1d809f;
+  text-align: center;
+  padding: 14rem 0; }
+  #resist h2 {
+    font-size: 3.6rem;
+    color: #fff;
+    margin-bottom: 40px; }
+  #resist button {
+    color: #000;
+    background-color: #fff; }
+    #resist button:hover {
+      background-color: #cccccc; }
+    #resist button:nth-child(3) {
+      background-color: #343a40;
+      color: #fff; }
+      #resist button:nth-child(3):hover {
+        background-color: #000; }
+
+/*Resist end*/
+/*Footer start*/
+footer {
+  padding: 10rem 0;
+  text-align: center; }
+  footer ul {
+    display: flex;
+    list-style: none;
+    justify-content: center; }
+    footer ul li {
+      margin-right: 10px; }
+      footer ul li i {
+        background-color: #1d809f;
+        padding: 20px 26px;
+        color: #fff;
+        font-size: 2rem;
+        border-radius: 50%;
+        transition: background-color .6s ease; }
+        footer ul li i:hover {
+          background-color: #155d74; }
+  footer p {
+    margin-top: 10px;
+    color: #3d3d3d; }
+
+/*Footer end*/
+/*Scrool_top start*/
+.scrool-top {
+  visibility: hidden;
+  bottom: 15px; }
+
+/*Scrool_top end*/
+@media (min-width: 576px) {
+  html {
+    font-size: 6px; }
+    html #services .container, html #portfolio .container {
+      width: 80%; } }
+@media (min-width: 768px) {
+  html {
+    font-size: 7px; }
+    html #services .wrapper .item {
+      width: 50%; }
+    html #portfolio .container {
+      width: 60%; }
+      html #portfolio .container .wrapper .item {
+        width: 100%; } }
+@media (min-width: 992px) {
+  html {
+    font-size: 10px; }
+    html #services .wrapper .item {
+      width: 25%; }
+    html #services .wrapper .content p {
+      font-size: 1.6rem; }
+    html #portfolio .container {
+      width: 80%; }
+      html #portfolio .container .wrapper .item {
+        width: 50%; } }
